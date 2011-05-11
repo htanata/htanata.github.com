@@ -1,4 +1,6 @@
 @import "compass/css3";
+@import "compass/typography/lists/inline-list";
+@import "blueprint";
 
 //-----------------------------------------------
 // The following html5-boilerplate styles should
@@ -48,9 +50,21 @@ input:invalid, textarea:invalid {
 
 body {}
 
-#container {}
+#container {
+  @include container;
+}
 
-header {}
+#main-header {
+  padding-top: 1em;
+
+  h1 {
+    @include font-size(15px);
+  }
+}
+
+#main-nav {
+  ul { @include delimited-list(" | "); }
+}
 
 #main {}
 

@@ -1,11 +1,19 @@
 ---
 layout: default
 ---
+<section>
+  <header>
+    <h1>Hello!</h1>
+  </header>
+</section>
 
-<h1>Hello world!</h1>
+<hr />
 
-<ul>
-  {% for post in site.posts %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+<section>
+  <header><h1>Blog Posts</h1></header>
+  <ul>
+    {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
