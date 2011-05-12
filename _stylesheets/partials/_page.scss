@@ -56,6 +56,20 @@ hr {
   @include single-box-shadow(#eee, 0, 1px, 8px, 1px);
 }
 
+p {
+  margin-bottom: 1em;
+}
+
+article header {
+  margin-bottom: 1em;
+
+  h1 { @include font-size(14px); }
+
+  time {
+    @include font-size(11px);
+  }
+}
+
 #container {
   @include container;
 }
