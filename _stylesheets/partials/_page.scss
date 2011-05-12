@@ -51,14 +51,19 @@ input:invalid, textarea:invalid {
 
 body {}
 
+hr {
+  @include single-box-shadow(#eee, 0, 1px, 8px, 1px);
+}
+
 #container {
   @include container;
 }
 
 #main-header {
-  padding-top: 1em;
+  padding: 1em 0;
 
   h1 {
+    @include single-text-shadow($voff: 1px);
     @include font-size(15px);
   }
 }
@@ -69,6 +74,10 @@ body {}
 
 nav {
   a:visited { color: $link-color; }
+}
+
+section h1 {
+  margin-bottom: 1em;
 }
 
 #main {}
