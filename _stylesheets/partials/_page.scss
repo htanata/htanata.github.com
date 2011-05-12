@@ -20,7 +20,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-a, a:active, a:visited { color: $link-color; }
+a, a:active { color: $link-color; }
+a:visited { color: $link-visited-color; }
 a:hover { color: $link-hover-color; }
 
 strong, th {
@@ -64,6 +65,10 @@ body {}
 
 #main-nav {
   ul { @include delimited-list(" | "); }
+}
+
+nav {
+  a:visited { color: $link-color; }
 }
 
 #main {}
