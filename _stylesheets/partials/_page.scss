@@ -11,6 +11,7 @@ body, select, input, textarea {
   color: $font-color;
   // Set your base font here, to apply evenly
   // font-family: Georgia, serif;
+  font-family: $blueprint-font-family;
 }
 
 //Headers (h1, h2, etc) have no default font-size or margin; define those yourself
