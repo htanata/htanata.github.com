@@ -100,10 +100,6 @@ article header {
   ul { @include delimited-list(" | "); }
 }
 
-nav {
-  a:visited { color: $link-color; }
-}
-
 section h1 {
   margin-bottom: 0.5em;
   @include font-size(15px);
