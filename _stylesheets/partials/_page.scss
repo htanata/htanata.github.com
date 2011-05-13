@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
   // Bold might not be the best choice if you are
   // embedding a @font-face that's already bold
   font-weight: bold;
+  color: #333333;
 }
 
 a, a:active { color: $link-color; }
@@ -66,7 +67,10 @@ p {
 article header {
   margin-bottom: 1em;
 
-  h1 { @include font-size(14px); }
+  h1 {
+    @include font-size(20px);
+    font-family: 'Droid Sans', $blueprint-font-family;
+  }
 
   time {
     @include font-size(11px);
@@ -82,7 +86,8 @@ article header {
 
   h1 {
     @include single-text-shadow($voff: 1px);
-    @include font-size(15px);
+    @include font-size(26px);
+    font-family: 'Josefin Slab', $blueprint-font-family;
   }
 }
 
@@ -95,9 +100,14 @@ nav {
 }
 
 section h1 {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  @include font-size(15px);
+  font-family: 'Amaranth', $blueprint-font-family;
+  @include single-text-shadow($blur: 3px)
 }
 
-#main {}
+#main {
+  @include font-size(14px);
+}
 
 footer {}
