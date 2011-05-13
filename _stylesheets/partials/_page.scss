@@ -1,6 +1,9 @@
 @import "compass/css3";
 @import "compass/typography/lists/inline-list";
-@import "blueprint";
+@import "blueprint/typography";
+
+$blueprint-grid-columns: 16;
+@import "blueprint/grid";
 
 //-----------------------------------------------
 // The following html5-boilerplate styles should
