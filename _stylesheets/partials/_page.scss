@@ -88,6 +88,11 @@ article header {
     @include single-text-shadow($voff: 1px);
     @include font-size(26px);
     font-family: 'Josefin Slab', $blueprint-font-family;
+
+    a, a:active, a:visited {
+      color: $font-color;
+      text-decoration: none;
+    }
   }
 }
 
