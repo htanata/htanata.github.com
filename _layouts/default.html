@@ -16,7 +16,7 @@
     <link rel="alternate" type="application/atom+xml" title="Feed" href="/atom.xml" />
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:light|Amaranth|Droid+Sans' rel='stylesheet' type='text/css'>
     <link href='/css/style.css?v=1' media='all' rel='stylesheet' />
-    <script src='/js/modernizr.min.js'></script>
+    <script src='/js/head.min.js'></script>
   </head>
   <body>
     <div id='container'>
@@ -39,14 +39,20 @@
         </ul>
       </footer>
     </div>
-    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js'></script>
-    <script type='text/javascript'>
+    <script type="text/javascript">
       //<![CDATA[
-        window.jQuery || document.write("<script src='js/jquery.min.js'>\x3C/script>")
+      head.js(
+        {jquery: "//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"},
+        {plugin: "/js/plugins.js?v=1"},
+        {script: "/js/script.js?v=1"}
+      );
+
+      var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+      s.parentNode.insertBefore(g,s)}(document,"script"));
       //]]>
     </script>
-    <script src='/js/plugins.js?v=1'></script>
-    <script src='/js/script.js?v=1'></script>
     <!--[if lt IE 7 ]>
       <script src='/js/dd_belatedpng.js'></script>
       <script type='text/javascript'>
@@ -55,13 +61,5 @@
         //]]>
       </script>
     <![endif]-->
-    <script type='text/javascript'>
-      //<![CDATA[
-        var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-        g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-        s.parentNode.insertBefore(g,s)}(document,"script"));
-      //]]>
-    </script>
   </body>
 </html>
