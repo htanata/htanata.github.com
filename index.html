@@ -9,6 +9,7 @@ layout: default
     Other than the simple fact that I'm human, I'm also a programmer. I've been
     doing Ruby and Rails since 2007. That's when the bleeding edge Rails was
     version 1.2.5.
+    <span class="more"><a href="#">More&hellip;</a></span>
   </p>
   <p>
     I'm at the moment based in Singapore, an extension of getting my computer
@@ -43,3 +44,16 @@ layout: default
     {% endfor %}
   </ul>
 </section>
+
+<script type="text/javascript">
+  head.ready(function() {
+    var $hiddenParagraphs = $('p').not(':first').not(':last').hide();
+    $('.more').show();
+
+    $('.more').click(function() {
+      $hiddenParagraphs.show();
+      $(this).hide();
+      return false;
+    });
+  });
+</script>
