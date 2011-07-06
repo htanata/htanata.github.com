@@ -123,6 +123,11 @@ section h1 {
   @include font-size(14px);
 }
 
+#copyright {
+  margin-top: 1em;
+  color: #999;
+}
+
 footer {}
 
 .more { display: none; }
