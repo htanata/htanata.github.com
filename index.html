@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section>
+<section id="intro">
   <header>
     <h1>Hello!</h1>
   </header>
@@ -38,16 +38,16 @@ layout: default
 
 <section>
   <header><h1>Blog Posts</h1></header>
-  <ul>
-    {% for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+  <script src="http://feeds.feedburner.com/CodeFtw?format=sigpro" type="text/javascript"></script>
+  <noscript>
+    Visit <a href="http://codeftw.blogspot.com">Code FTW</a> to read my thoughts
+    about software development.
+  </noscript>
 </section>
 
 <script type="text/javascript">
   head.ready(function() {
-    var $hiddenParagraphs = $('p').not(':first').not(':last').hide();
+    var $hiddenParagraphs = $('#intro p').not(':first').not(':last').hide();
     $('.more').show();
 
     $('.more').click(function() {
@@ -55,5 +55,9 @@ layout: default
       $(this).hide();
       return false;
     });
+
+
+    $('#creditfooter').remove();
+    $('.feedburnerFeedBlock');
   });
 </script>

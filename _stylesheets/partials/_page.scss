@@ -135,3 +135,16 @@ section h1 {
 footer {}
 
 .more { display: none; }
+
+.feedburnerFeedBlock {
+  .headline {
+    font-family: 'Droid Sans', $blueprint-font-family;
+  }
+
+  .date {
+    display: inline;
+    margin-left: 0.5em;
+    color: #666;
+    @include font-size(12px);
+  }
+}
