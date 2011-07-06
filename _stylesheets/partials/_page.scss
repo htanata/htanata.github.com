@@ -64,6 +64,18 @@ p {
   margin-bottom: 1em;
 }
 
+dl {
+  margin: 0 0 1.5em 0;
+  dt {
+    font-weight: bold;
+  }
+}
+
+dd {
+  margin: 0.25em 0 1em 1.5em;
+  @include font-size(12px);
+}
+
 article header {
   margin-bottom: 1em;
 
