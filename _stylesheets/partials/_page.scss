@@ -154,9 +154,9 @@ section h1 {
   @include clearfix;
 }
 
-#stackoverflow-flair {
-  float: right;
-}
+#related-links { float: left; }
+
+#stackoverflow-flair { float: right; }
 
 .more { display: none; }
 
