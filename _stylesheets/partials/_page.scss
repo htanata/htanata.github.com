@@ -147,6 +147,14 @@ section h1 {
   padding-top: 1em;
 }
 
+#footer-links {
+  @include clearfix;
+}
+
+#stackoverflow-flair {
+  float: right;
+}
+
 .more { display: none; }
 
 .feedburnerFeedBlock {
