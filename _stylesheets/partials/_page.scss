@@ -138,12 +138,15 @@ section h1 {
 
 #copyright {
   margin-top: 1em;
-  color: #999;
+  @include font-size(11px);
+  color: #bbb;
+  text-align: right;
 }
 
 #main-footer {
   border-top: 4px solid #ddd;
   margin-top: 1em;
+  margin-bottom: 0.5em;
   padding-top: 1em;
 }
 
