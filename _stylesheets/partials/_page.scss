@@ -127,9 +127,8 @@ article {
 
 section h1 {
   margin-bottom: 0.5em;
-  @include font-size(15px);
+  @include font-size(18px);
   font-family: 'Amaranth', $blueprint-font-family;
-  @include single-text-shadow($blur: 3px)
 }
 
 #main {
