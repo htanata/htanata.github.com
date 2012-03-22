@@ -1,71 +1,12 @@
 @import "compass/css3";
 @import "compass/typography/lists/inline-list";
-@import "blueprint/typography";
 
-$blueprint-grid-columns: 16;
-@import "blueprint/grid";
-
-//-----------------------------------------------
-// The following html5-boilerplate styles should
-// probably be customized for each site
-//-----------------------------------------------
-
-body, select, input, textarea {
-  color: $font-color;
-  // Set your base font here, to apply evenly
-  // font-family: Georgia, serif;
-  font-family: $blueprint-font-family;
+a:visited {
+  color: $purple;
 }
-
-//Headers (h1, h2, etc) have no default font-size or margin; define those yourself
-h1, h2, h3, h4, h5, h6 {
-  // Bold might not be the best choice if you are
-  // embedding a @font-face that's already bold
-  font-weight: bold;
-  color: #333333;
-}
-
-a { text-decoration: none; }
-a, a:active { color: $link-color; }
-a:visited { color: $link-visited-color; }
-a:hover {
-  color: $link-hover-color;
-  text-decoration: underline;
-}
-
-strong, th {
-  font-weight: bold;
-}
-
-small {
-  // Use font-size mixin to convert to percentage for YUI
-  // http://developer.yahoo.com/yui/3/cssfonts/#fontsize
-  @include font-size(11px);  // approx 85% when base-font-size eq 13px
-}
-
-// Add the 'required' attribute on your
-// inputs if you want to use these
-input:valid, textarea:valid {}
-input:invalid, textarea:invalid {
-  @include border-radius(1px);
-  @include single-box-shadow(red, 0, 0, 5px, 0);
-}
-.no-boxshadow input:invalid,
-.no-boxshadow textarea:invalid { background-color: #f0dddd; }
-
-
-//-----------------------------------
-// Add your own custom styles below
-//-----------------------------------
-
-body {}
 
 hr {
   @include single-box-shadow(#eee, 0, 1px, 8px, 1px);
-}
-
-p {
-  margin-bottom: 1em;
 }
 
 dl {
@@ -78,32 +19,28 @@ dl {
 
 dd {
   margin: 0.25em 0 1em 1.5em;
-  @include font-size(12px);
+  font-size: 12px;
 }
 
 article {
   h1, h2 {
-    font-family: 'Droid Sans', $blueprint-font-family;
+    font-family: 'Droid Sans', $baseFontFamily;
   }
 
   h2 {
-    @include font-size(14px);
+    font-size: 14px;
     margin-bottom: 0.5em;
   }
 
   header {
     margin-bottom: 1em;
 
-    h1 { @include font-size(20px); }
+    h1 { font-size: 20px; }
 
     time {
-      @include font-size(11px);
+      font-size: 11px;
     }
   }
-}
-
-#container {
-  @include container;
 }
 
 #main-header {
@@ -111,11 +48,11 @@ article {
 
   h1 {
     @include single-text-shadow($voff: 1px);
-    @include font-size(26px);
-    font-family: 'Josefin Slab', $blueprint-font-family;
+    font-size: 26px;
+    font-family: 'Josefin Slab', $baseFontFamily;
 
     a, a:active, a:visited {
-      color: $font-color;
+      color: $textColor;
       text-decoration: none;
     }
   }
@@ -127,17 +64,17 @@ article {
 
 section h1 {
   margin-bottom: 0.5em;
-  @include font-size(18px);
-  font-family: 'Amaranth', $blueprint-font-family;
+  font-size: 18px;
+  font-family: 'Amaranth', $baseFontFamily;
 }
 
 #main {
-  @include font-size(14px);
+  font-size: 14px;
 }
 
 #copyright {
   margin-top: 1em;
-  @include font-size(11px);
+  font-size: 11px;
   color: #bbb;
   text-align: right;
 }
@@ -161,13 +98,13 @@ section h1 {
 
 .feedburnerFeedBlock {
   .headline {
-    font-family: 'Droid Sans', $blueprint-font-family;
+    font-family: 'Droid Sans', $baseFontFamily;
   }
 
   .date {
     display: inline;
     margin-left: 0.5em;
     color: #666;
-    @include font-size(12px);
+    font-size: 12px;
   }
 }
