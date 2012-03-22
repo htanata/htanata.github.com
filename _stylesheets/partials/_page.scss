@@ -1,5 +1,7 @@
 @import "compass/css3";
 @import "compass/typography/lists/inline-list";
+@import "compass/typography/lists/bullets";
+@import "mixins/bullets";
 
 a:visited {
   color: $purple;
@@ -90,7 +92,28 @@ section h1 {
   @include clearfix;
 }
 
-#related-links { float: left; }
+#related-links {
+  float: left;
+  margin-left: 0;
+
+  @include no-bullets;
+
+  li {
+    margin-bottom: 2px;
+  }
+
+  .twitter {
+    @include pretty-bullet("icons/twitter_16.png");
+  }
+
+  .github {
+    @include pretty-bullet("icons/github_16.png");
+  }
+
+  .email {
+    @include pretty-bullet("icons/mail-at-sign.png");
+  }
+}
 
 #stackoverflow-flair { float: right; }
 

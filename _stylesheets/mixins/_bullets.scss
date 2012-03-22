@@ -1,0 +1,9 @@
+@mixin pretty-bullet($bullet-icon,
+                     $width: image-width($bullet-icon),
+                     $height: image-height($bullet-icon),
+                     $line-height: 18px,
+                     $padding: 24px) {
+
+  padding-left: $padding;
+  background: image-url($bullet-icon) no-repeat ($padding - $width) / 2 ($line-height - $height) / 2;
+}
