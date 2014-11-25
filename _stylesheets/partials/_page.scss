@@ -7,10 +7,6 @@ a:visited {
   color: $purple;
 }
 
-hr {
-  @include single-box-shadow(#eee, 0, 1px, 8px, 1px);
-}
-
 dl {
   margin: 0 0 1.5em 0;
   dt {
