@@ -106,6 +106,10 @@ section h1 {
     @include pretty-bullet("icons/github_16.png");
   }
 
+  .goodreads {
+    @include pretty-bullet("icons/goodreads_16.png");
+  }
+
   .email {
     @include pretty-bullet("icons/mail-at-sign.png");
   }
