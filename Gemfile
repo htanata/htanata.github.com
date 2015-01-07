@@ -2,4 +2,4 @@ source 'https://rubygems.org'
 
 gem 'github-pages'
 gem 'compass'
-gem 'bootstrap-sass', '~>2.0.1'
+gem 'foundation', require: false
