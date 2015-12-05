@@ -1,7 +1,21 @@
 {
-  "name": "foundation-compass-app",
-  "version": "0.0.1",
-  "private": "true",
+  "name": "htanata.github.com",
+  "homepage": "https://github.com/htanata/htanata.github.com",
+  "authors": [
+    "Hendy Tanata <htanata@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "CC BY-NC 4.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
     "foundation": "zurb/bower-foundation"
   }
