@@ -22,17 +22,19 @@
   <body>
     <div id='container' class="container">
       <header>
-        <h1><a href="/" class="site-title">{{ site.title }}</a></h1>
+        <div class="top-bar">
+          <div class="top-bar-left">
+            <a href="/" class="site-title">{{ site.title }}</a>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu">
+              <li><a href="/works.html">Works</a></li>
+              <li><a href="/open_source.html">Open Source</a></li>
+              <li><a href="http://codeftw.blogspot.com">Blog</a></li>
+            </ul>
+          </div>
+        </div>
       </header>
-      <nav id="main-nav">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/works.html">Works</a></li>
-          <li><a href="/open_source.html">Open Source</a></li>
-          <li><a href="http://codeftw.blogspot.com">Blog</a></li>
-        </ul>
-      </nav>
-      <hr />
       <div id='main'>{{ content }}</div>
       <footer id="main-footer">
         <div id="footer-links">

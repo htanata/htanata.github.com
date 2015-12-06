@@ -1,6 +1,11 @@
 @import 'compass/css3/text-shadow';
 
 .site-title {
+  display: block;
   color: $logo-color;
   font-family: 'Audiowide', cursive;
+  font-size: 1.5rem;
+  padding: $menu-item-padding;
+  padding-top: 0;
+  padding-bottom: 0;
 }
