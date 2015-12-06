@@ -1,9 +1,9 @@
+@import "variables/colors";
 @import "foundation-settings";
 @import "foundation";
 @include foundation-global-styles;
 @include foundation-typography;
 
-@import "variables/colors";
 @import "base";
 @import "components/container";
 @import "components/site-title";
