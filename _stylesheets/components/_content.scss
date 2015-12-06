@@ -2,8 +2,21 @@
 
 .content {
   background-color: $content-background-color;
-  max-width: 50rem;
   padding: 1rem;
   margin: 1rem auto;
   @include box-shadow(0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24));
+
+  @include breakpoint(medium) {
+    max-width: 40rem;
+  }
+
+  @include breakpoint(large) {
+    max-width: 46rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @include breakpoint(small only) {
+    margin: 0 auto;
+  }
 }
