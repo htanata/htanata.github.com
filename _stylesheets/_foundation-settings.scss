@@ -2,3 +2,22 @@ $header-font-family: 'PT Serif', serif;
 $primary-color: $light-blue;
 $topbar-background: $black;
 $topbar-link-color: $light-blue;
+
+$header-sizes: (
+  small: (
+    'h1': 24,
+    'h2': 20,
+    'h3': 19,
+    'h4': 18,
+    'h5': 17,
+    'h6': 16,
+  ),
+  medium: (
+    'h1': 30,
+    'h2': 25,
+    'h3': 19,
+    'h4': 18,
+    'h5': 17,
+    'h6': 16,
+  ),
+);
