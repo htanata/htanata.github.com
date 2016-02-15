@@ -19,7 +19,7 @@
     <link href='/css/app.css?v=1' media='all' rel='stylesheet' />
     <script src='/js/head.min.js'></script>
   </head>
-  <body>
+  <body class="sticky-footer">
     <header role="banner">
       <div class="top-bar">
         <div class="top-bar-left">
@@ -34,7 +34,9 @@
         </nav>
       </div>
     </header>
-    <main role="main" class="content">{{ content }}</main>
+    <div class="sticky-footer__main">
+      <main role="main" class="content">{{ content }}</main>
+    </div>
     <footer role="contentinfo" class="main-footer">
       <div id="footer-links">
         <ul id="related-links">
