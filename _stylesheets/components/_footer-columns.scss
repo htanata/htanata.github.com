@@ -1,7 +1,18 @@
 .footer-columns {
+  $column-separator-width: 1rem;
+  $column-padding-width: $column-separator-width / 2;
+
   display: flex;
 
   &__left, &__right {
     flex-grow: 1;
+  }
+
+  &__left {
+    padding-right: $column-padding-width;
+  }
+
+  &__right {
+    padding-left: $column-padding-width;
   }
 }
