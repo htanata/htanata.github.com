@@ -1,3 +1,7 @@
 html, body {
   background-color: $body-background-color;
+
+  @include breakpoint(small only) {
+    background-color: $content-background-color;
+  }
 }
