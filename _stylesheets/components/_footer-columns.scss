@@ -1,7 +1,7 @@
-.columns {
+.footer-columns {
   display: flex;
 
-  &__1 {
+  &__left, &__right {
     flex-grow: 1;
   }
 }
