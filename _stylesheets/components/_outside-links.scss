@@ -1,0 +1,25 @@
+@import "mixins/bullets";
+
+.outside-links {
+  $line-height: 24px;
+
+  list-style: none;
+  margin-left: 1em;
+  line-height: $line-height;
+
+  &__twitter {
+    @include pretty-bullet("icons/twitter_16.png", $line-height: $line-height)
+  }
+
+  &__github {
+    @include pretty-bullet("icons/github_16.png", $line-height: $line-height)
+  }
+
+  &__goodreads {
+    @include pretty-bullet("icons/goodreads_16.png", $line-height: $line-height)
+  }
+
+  &__email {
+    @include pretty-bullet("icons/mail-at-sign.png", $line-height: $line-height)
+  }
+}
