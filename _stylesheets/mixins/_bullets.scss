@@ -7,4 +7,5 @@
 
   padding-left: $padding;
   background: image-url($bullet-icon) no-repeat ($padding - $width) / 2 ($line-height - $height) / 2;
+  list-style-type: none;
 }
