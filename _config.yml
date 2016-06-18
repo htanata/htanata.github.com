@@ -2,3 +2,7 @@ title: Hendy Tanata
 author: Hendy Tanata
 url: http://hendytanata.com
 email: hendy@tanata.net
+
+sass:
+  load-path: ./bower_components/foundation-sites/scss
+  style: compressed
