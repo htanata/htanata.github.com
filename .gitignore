@@ -1,4 +1,2 @@
-.*.sw[a-z]
 _site
 .sass-cache
-bin
