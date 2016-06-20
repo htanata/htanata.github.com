@@ -8,11 +8,13 @@
     overflow-x: auto;
     padding: 8px 12px;
 
-    > code {
-      border: 0;
-      padding-left: 0;
-      padding-right: 0;
-    }
+  }
+
+  code {
+    background-color: transparent;
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   // Taken from
